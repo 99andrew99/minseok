@@ -25,6 +25,10 @@ module.exports = {
                     "0%": { opacity: 1, visibility: "visible" },
                     "100%": { opacity: 0, visibility: "hidden" },
                 },
+                blink: {
+                    "0%, 100%": { opacity: 1 },
+                    "50%": { opacity: 0 },
+                },
             },
             animation: {
                 rise: "rise 0.5s forwards",
