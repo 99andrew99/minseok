@@ -67,7 +67,7 @@ export default function ContactIcon({ contactInfo }: contactIconProps) {
             className="flex gap-[20px] items-center hover:text-[#0064FF] text-[26px] cursor-pointer"
             onClick={handleClick}
         >
-            <div className="w-[70px] h-[70px] rounded-[999] bg-white flex items-center justify-center">
+            <div className="w-[70px] h-[70px] rounded-[99px] bg-white flex items-center justify-center">
                 <Image
                     src={contactInfo[0]}
                     alt={contactInfo[1]}
