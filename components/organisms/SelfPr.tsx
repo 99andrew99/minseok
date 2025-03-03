@@ -20,6 +20,7 @@ export default function SelfPr() {
                         prTexts={[
                             "{프론트엔드 개발자}",
                             "{사용자 편의성을 생각하는}",
+                            "{협업 능력을 갖춘}",
                         ]}
                     />
                 </div>
