@@ -19,7 +19,7 @@ export default function Contact() {
             <span className="text-center md:text-start font-bold text-[32px] md:text-[36px]">
                 Contact
             </span>
-            <div className="flex md:flex-col gap-[20px] w-full ">
+            <div className="flex  md:flex-col gap-[20px] w-full ">
                 {contactInfo.map((contact, idx) => (
                     <ContactIcon contactInfo={contact} key={idx} />
                 ))}

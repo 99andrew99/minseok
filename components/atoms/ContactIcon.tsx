@@ -64,10 +64,10 @@ export default function ContactIcon({ contactInfo }: contactIconProps) {
 
     return (
         <div
-            className="flex gap-[20px] items-center hover:text-[#0064FF] text-[26px] cursor-pointer"
+            className="flex  items-center hover:text-[#0064FF] text-[26px] cursor-pointer"
             onClick={handleClick}
         >
-            <div className="w-[70px] h-[70px] rounded-[99px] bg-white flex items-center justify-center">
+            <div className="min-w-[70px] h-[70px] rounded-[99px] bg-white flex items-center justify-center">
                 <Image
                     src={contactInfo[0]}
                     alt={contactInfo[1]}
@@ -75,16 +75,16 @@ export default function ContactIcon({ contactInfo }: contactIconProps) {
                     height={50}
                 />
             </div>
-            <RoughNotation
-                type="box"
-                show={showAnnotation}
-                color="#0064FF"
-                animationDuration={800}
-            >
-                <span className="font-bold hidden md:block">
-                    {contactInfo[2]}
-                </span>
-            </RoughNotation>
+            <div className="font-bold hidden md:block md:ml-[20px]">
+                <RoughNotation
+                    type="box"
+                    show={showAnnotation}
+                    color="#0064FF"
+                    animationDuration={800}
+                >
+                    <span>{contactInfo[2]}</span>
+                </RoughNotation>
+            </div>
         </div>
     );
 }
